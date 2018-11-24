@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <header>
-        A simple image-to-boolean converter for FPGA game Project<br>
-    </header>
-    <img id="importedImage" src="./test.bmp" width="160" height="120">
+    <img id="importedImage" width="160" height="120">
     <canvas id="canvas" width="160" height="120">
     </canvas>
     <canvas id="visualResult" width="160" height="120" style="border:1px solid #808080;">
     </canvas>
-    <button onclick="draw()">Click me</button>
-    <div id="intro">
-        <p>
-            First image is the image you imported.
-            Third image is the one that will show on the screen.
-            You don't need to care about the second image.
-            Results will be shown here:
-        </p>
-    </div>
+    <button onclick="startToLoad()">load image</button>
+    <input id="file-input" type="file" name="name" style="display: none;" />
     <div id="result">
         <p>
         </p>
     </div>
-    <script src = "convert.js">
+    <script src = "./convert.js">
     </script>
 
 </body>
